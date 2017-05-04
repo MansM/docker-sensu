@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "sensu-systemd-1": {
+      "command": "metrics-process-status.rb -p /usr/sbin/init",
+      "subscribers": [
+        "prod"
+      ],
+      "interval": 60,
+      "contact": "ops"
+    }
+  }
+}

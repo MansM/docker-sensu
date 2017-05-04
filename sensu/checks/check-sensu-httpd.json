@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "sensu-httpd": {
+      "command": "metrics-apache-graphite.rb",
+      "subscribers": [
+        "httpd"
+      ],
+      "interval": 60,
+      "contact": "ops"
+    }
+  }
+}

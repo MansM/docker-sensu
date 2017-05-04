@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "sensu-load": {
+      "command": "check-load.rb --warn 3,2,1.5 --crit 6,2.5,1.4 -p",
+      "subscribers": [
+        "prod"
+      ],
+      "interval": 60,
+      "contact": "ops"
+    }
+  }
+}

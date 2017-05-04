@@ -1,0 +1,23 @@
+version: "2"
+services:
+  redis:
+    image: redis:3-alpine
+    ports:
+      - 4567:4567
+    volumes:
+     - ./redis/redis.conf:/usr/local/etc/redis/redis.conf:ro
+    command: redis-server /usr/local/etc/redis/redis.conf
+  sensu:
+    build: sensu
+    ports:
+      - 3000:3000
+    tty:   true
+    privileged:      true
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+  client:
+    build: client
+    tty:   true
+    privileged:      true
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
