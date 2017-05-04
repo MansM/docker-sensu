@@ -15,8 +15,9 @@ open a browser to http://localhost:3000 or http://docker-ip:3000
 * Client
 
 Client and Server connect to Redis. 
-Server contains checks [See sensu/checks ](tree/master/sensu/checks)
-Client contains plugins and subscriptions [See client/client.json ](tree/master/client/client.json)
+Server contains checks [See sensu/checks ](sensu/checks)
+
+Client contains plugins and subscriptions [See client/client.json ](client/client.json)
 
 
 ## Websites:
