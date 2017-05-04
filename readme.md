@@ -20,5 +20,5 @@ Client contains plugins and subscriptions [See client/client.json ](client/clien
 
 
 ## Websites:
-Sensu: https://sensuapp.org/
+Sensu: https://sensuapp.org/</br>
 Sensu-plugins: http://sensu-plugins.io/
